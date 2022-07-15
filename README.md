@@ -1,6 +1,10 @@
 # AnySniper DApp
 
-This repository contains all the code for running AnySniper DApp which had 500 active users.
+This repository contains all the code for running AnySniper DApp which had 500 active users. All the logic codes are in this repository, you can add a custom DEX on src/config.js.
+
+Currently it has Uniswap, Pancakeswap, Sushiswap, Degenswap and some DEX on Crono chain.
+
+Backend is for storing user configrations like contract scanner info, favorite contracts address, copy trading targets etc.
 
 ## Project setup
 ```
