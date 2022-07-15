@@ -1,0 +1,67 @@
+{
+  "name": "bunnyfarm",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.3.0",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/vue-fontawesome": "^2.0.6",
+    "@walletconnect/web3-provider": "^1.7.1",
+    "axios": "^0.24.0",
+    "core-js": "^3.6.5",
+    "crypto-js": "^4.1.1",
+    "epic-spinners": "^1.1.0",
+    "ethers": "^5.5.1",
+    "merkletreejs": "^0.2.24",
+    "parse": "^3.4.0",
+    "socket.io-client": "^4.4.0",
+    "v-calendar": "^2.3.4",
+    "v-click-outside": "^3.1.2",
+    "v-emoji-picker": "^2.3.3",
+    "vue": "^2.6.11",
+    "vue-json-pretty": "^1.8.2",
+    "vue-router": "^3.2.0",
+    "vue-toastification": "^1.7.14",
+    "vue-tour": "^2.0.0",
+    "vuesax": "^4.0.1-alpha.25",
+    "vuex": "^3.6.2",
+    "web3": "^1.6.0",
+    "web3modal": "^1.9.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "^4.5.15",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
