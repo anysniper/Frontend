@@ -37,4 +37,4 @@ npm run build
 npm run lint
 ```
 
-#### Leave a star on top right if you get notification for further updates
+#### Leave a star on top right if you want to get notification for further updates
