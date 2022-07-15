@@ -1,4 +1,6 @@
-# AnySniper
+# AnySniper DApp
+
+This repository contains all the code for running AnySniper DApp which had 500 active users.
 
 ## Project setup
 ```
@@ -19,6 +21,8 @@ The final configration would be looking like this
   PARSE_MASTER_KEY: '',
   PARSE_JS_KEY: '1MT3Ew8i1yQUX4SIvqbDiaggfszvtZ....',  
 ```
+
+Backend is used to store user configrations like `Watching Lists`, `Copy Trading Targets`, and `Contracts Information`. All the logic is inside the src/store.
 
 Also need to change `MAINNET_RPC` which is used to fetch the token balance.
 
