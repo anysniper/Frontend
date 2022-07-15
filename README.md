@@ -6,6 +6,14 @@ Currently it has Uniswap, Pancakeswap, Sushiswap, Degenswap and some DEX on Cron
 
 Backend is for storing user configrations like contract scanner info, favorite contracts address, copy trading targets etc.
 
+Backend is using Parse Server which is being used by Moralis team. It's good for SPAs.
+
+You can use free backend services like Back4App and there is details about that in Project Setup.
+
+Copy Trading has a minor issue and will be fixed soon. It's basically calculating the amountOut / amountIn.
+
+One or two files have many lines of code which contains almost all the logic for sniping, however we can optimize that and any PR is welcome.
+
 ## Project setup
 ```
 npm install
