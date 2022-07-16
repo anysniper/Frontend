@@ -14,6 +14,12 @@ Copy Trading has a minor issue and will be fixed soon. It's basically calculatin
 
 One or two files have many lines of code which contains almost all the logic for sniping, however we can optimize that and any PR is welcome.
 
+Contract Scanner will not be published but it will be online for the next few months. If you need the scanner code to customize yourself, you can directly contact me.
+
+The Backend code for Back4App will also be published but for now you can just run your Sniping DApp without it using Back4App.
+
+I hope this helps the space for developing new projects in Defi and I am pretty sure this code can be very good to be used as a template or boilerplate for a new project.
+
 ## Project setup
 ```
 npm install
