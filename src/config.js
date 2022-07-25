@@ -1,6 +1,6 @@
 import ABI from '@/constants/abi';
 
-export default {
+const config = {
   API_BASE_URL: 'http://localhost:8001', // API not used
 
   // TODO: change backend's endpoints
@@ -24,9 +24,9 @@ export default {
   SOCKET_DAPP_ID: 'e72e44c7-d688-4e0e-82a1-6ceb410b2992',
 
   // Threshold
-  MIN_SNIPER_VALUE: 0.2,
-  MIN_SNIPER_VALUE_FOR_COPY_TRADING: 0.3,
-  MIN_DETAILS_SNIPER_AMOUNT: 100000,
+  MIN_SNIPER_VALUE: 0,
+  MIN_SNIPER_VALUE_FOR_COPY_TRADING: 0,
+  MIN_DETAILS_SNIPER_AMOUNT: 0,
 
   SNIPER_ADDRESS: '0xb8fb35e3406e597e5f86d4f3c0e3063a6fab71a5',
 
@@ -119,4 +119,32 @@ export default {
   ],
 
   IS_TEST: false,
+
+  load() {
+    try {
+      const localConfig = JSON.parse(localStorage.getItem(`backend_configs`));
+      this.PARSE_APP_ID = localConfig.APP_ID;
+      this.PARSE_URL = localConfig.URL;
+      this.PARSE_MASTER_KEY = localConfig.MASTER_KEY;
+      this.PARSE_JS_KEY = localConfig.JS_KEY;
+    // eslint-disable-next-line no-empty
+    } catch (e) {}
+  },
+
+  save() {
+    try {
+      const config = {
+        APP_ID: this.PARSE_APP_ID,
+        URL: this.PARSE_URL,
+        MASTER_KEY: this.PARSE_MASTER_KEY,
+        JS_KEY: this.PARSE_JS_KEY
+      }
+      localStorage.setItem('backend_configs', JSON.stringify(config));
+    // eslint-disable-next-line no-empty
+    } catch (e) {}
+  }
 }
+
+config.load();
+
+export default config;

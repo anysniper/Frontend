@@ -4,6 +4,25 @@
     <header id="home" style="margin-bottom: 30px;">
       <Navbar/>
     </header>
+    <div v-if="!account" class="container d-flex justify-content-between align-items-start flex-wrap xl-gap px-4 mb-5">
+      <div class="bg-white d-flex flex-column justfy-content-center align-items-center" style="padding: 2rem; width: 100%;">
+        <h3>Settings</h3>
+        <div class="d-flex w-100 justify-content-around" style="flex-wrap: wrap;">
+          <div class="d-flex align-items-center mt-1">Backend Url: <input v-model="config.PARSE_URL" type="text" class="form-control"  style="width: 250px; padding-left: 5px; margin-left: 10px;"/></div>
+          <div class="d-flex align-items-center mt-1">Backend App ID: <input v-model="config.PARSE_APP_ID" type="text" class="form-control"  style="width: 80px; padding-left: 5px; margin-left: 10px;"/> </div>
+          <div class="d-flex align-items-center mt-1">Backend Master Key: <input v-model="config.PARSE_MASTER_KEY" type="text" class="form-control"  style="width: 80px; padding-left: 5px; margin-left: 10px;"/></div>
+          <div class="d-flex align-items-center mt-1">Backend JS Key: <input v-model="config.PARSE_JS_KEY" type="text" class="form-control"  style="width: 80px; padding-left: 5px; margin-left: 10px;"/> </div>
+        </div>
+        <div class="mt-4">
+          <a id="dropdownMenuButton"
+            @click="saveSetting"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false" class="btn-infos" >
+            Save Settings
+          </a>
+        </div>
+      </div>
+    </div>
     <template v-if="isLoading">
       Loading...
     </template>
@@ -109,6 +128,9 @@ export default {
     isAdmin() {
       return Web3.isAdmin();
     },
+    saveSetting() {
+      Config.save();
+    },
     async connect() {
       if (this.isConnecting) {
         return;
@@ -156,6 +178,7 @@ export default {
   },
   computed: {
     ...mapGetters(["account", "balance"]),
+    config: () => Config
   },
   watch: {
     async account() {

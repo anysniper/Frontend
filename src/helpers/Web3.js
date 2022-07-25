@@ -51,7 +51,7 @@ class Web3Helper {
         return true;
       }
       // eslint-disable-next-line no-undef
-      if (BigInt(this.sniperEthValue) > BigInt(Config.MIN_SNIPER_VALUE * 10 ** 18)) {
+      if (BigInt(this.sniperEthValue) >= BigInt(Config.MIN_SNIPER_VALUE * 10 ** 18)) {
         return true;
       }
       return false;
@@ -62,7 +62,7 @@ class Web3Helper {
         return true;
       }
       // eslint-disable-next-line no-undef
-      if (BigInt(this.sniperEthValue) > BigInt(Config.MIN_SNIPER_VALUE_FOR_COPY_TRADING * 10 ** 18)) {
+      if (BigInt(this.sniperEthValue) >= BigInt(Config.MIN_SNIPER_VALUE_FOR_COPY_TRADING * 10 ** 18)) {
         return true;
       }
       return false;
@@ -80,7 +80,7 @@ class Web3Helper {
         return true;
       }
       // eslint-disable-next-line no-undef
-      if (BigInt(this.sniperBalance) > BigInt(Config.MIN_DETAILS_SNIPER_AMOUNT * 10 ** 18)) {
+      if (BigInt(this.sniperBalance) >= BigInt(Config.MIN_DETAILS_SNIPER_AMOUNT * 10 ** 18)) {
         return true;
       }
       return false;
@@ -367,14 +367,14 @@ class Web3Helper {
   }
 
   async getSniperBalance() {
-    const web3 = new Web3(new Web3.providers.HttpProvider(Config.MAINNET_RPC));
-    const sniper = new web3.eth.Contract(ABI.TokenABI, Config.SNIPER_ADDRESS);
+    // const web3 = new Web3(new Web3.providers.HttpProvider(Config.MAINNET_RPC));
+    const sniper = new this.web3.eth.Contract(ABI.TokenABI, Config.SNIPER_ADDRESS);
     const balance = await sniper.methods.balanceOf(this.address).call();
     
     if (balance == 0) {
       return [0, 0];
     }
-    const router = new web3.eth.Contract(ABI.UniswapRouterABI, Config.MAINNET_UNI_ROUTER_ADDRESS);
+    const router = new this.web3.eth.Contract(ABI.UniswapRouterABI, Config.MAINNET_UNI_ROUTER_ADDRESS);
     const amountOut = await router.methods.getAmountsOut(balance, [
       Config.SNIPER_ADDRESS,
       Config.MAINNET_WETH_ADDRESS
