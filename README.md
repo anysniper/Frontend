@@ -1,3 +1,5 @@
+For running the sniper on your local, see this [Wiki](https://github.com/anysniper/Frontend/wiki/Project-Setup)
+
 # AnySniper DApp
 
 This repository contains all the code for running AnySniper DApp which had 500 active users. All the logic codes are in this repository, you can add a custom DEX on src/config.js.
