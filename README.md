@@ -4,6 +4,8 @@ You can find explanations for each component [here](http://help.anysnipers.com/e
 
 Full Tutorial [here](http://help.anysnipers.com/en/articles/5989339-anysniper-dapp-tutorial)
 
+Public Access https://app.anysnipers.com (You will need to hold previous $SNIPE token)
+
 # AnySniper DApp
 
 This repository contains all the code for running AnySniper DApp which had 500 active users. All the logic codes are in this repository, you can add a custom DEX on src/config.js.
