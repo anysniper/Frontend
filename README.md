@@ -1,6 +1,8 @@
 For running the sniper on your local, see this [Wiki](https://github.com/anysniper/Frontend/wiki/Project-Setup)
 
-You can find Tutorial [here](http://help.anysnipers.com/en/collections/3347092-quick-guide-to-anysniper)
+You can find explanations for each component [here](http://help.anysnipers.com/en/collections/3347092-quick-guide-to-anysniper)
+
+Full Tutorial [here](http://help.anysnipers.com/en/articles/5989339-anysniper-dapp-tutorial)
 
 # AnySniper DApp
 
