@@ -1,32 +1,28 @@
-For running the sniper on your local, see this [Wiki](https://github.com/anysniper/Frontend/wiki/Project-Setup)
+To run the sniper locally, see this [Wiki](https://github.com/anysniper/Frontend/wiki/Project-Setup)
 
-You can find explanations for each component [here](http://help.anysnipers.com/en/collections/3347092-quick-guide-to-anysniper)
+Explanations for each component in DApp [here](http://help.anysnipers.com/en/collections/3347092-quick-guide-to-anysniper)
 
 Full Tutorial [here](http://help.anysnipers.com/en/articles/5989339-anysniper-dapp-tutorial)
 
-Public Access https://app.anysnipers.com (You will need to hold previous $SNIPE token)
+Public Access https://app.anysnipers.com (You can switch to Rinkeby testnet on your wallet)
 
 # AnySniper DApp
 
-This repository contains all the code for running AnySniper DApp which had 500 active users. All the logic codes are in this repository, you can add a custom DEX on src/config.js.
+This repository contains all the code to run AnySniper DApp with 500 active users. All logic code is in this repository and you can add your custom DEX to src/config.js
 
-Currently it has Uniswap, Pancakeswap, Sushiswap, Degenswap and some DEX on Crono chain.
+There are currently Uniswap, Pancakeswap, Sushiswap, Degenswap and some DEXs on Crono chains.
 
-Backend is for storing user configrations like contract scanner info, favorite contracts address, copy trading targets etc.
+The backend is intended to store user configurations such as contract scanner information, favorite contract addresses, and copy trading targets.
 
-Backend is using Parse Server which is being used by Moralis team. It's good for SPAs.
+The backend is using [Parse Server](https://parseplatform.org/)
 
-You can use free backend services like Back4App and there is details about that in Project Setup.
+You can use a free backend service like Back4App, details about this can be found in [here](https://github.com/anysniper/Frontend/wiki/Project-Setup).
 
-Copy Trading has a minor issue and will be fixed soon. It's basically calculating the amountOut / amountIn.
+There is a minor issue with copy trading and will be fixed soon. It basically calculates amountOut / amountIn.
 
-One or two files have many lines of code which contains almost all the logic for sniping, however we can optimize that and any PR is welcome.
+One or two files have multiple lines of code with almost all the logic for sniping, but you can optimize it and any PRs are welcome.
 
-Contract Scanner will not be published but it will be online for the next few months. If you need the scanner code to customize yourself, you can directly contact me.
-
-The Backend code for Back4App will also be published but for now you can just run your Sniping DApp without it using Back4App.
-
-I hope this helps the space for developing new projects in Defi and I am pretty sure this code can be very good to be used as a template or boilerplate for a new project.
+I hope this will help the space for developing new projects at Defi and I'm sure this code will be nice to use as a template or boilerplate for new projects.
 
 ## Project setup
 ```
@@ -48,9 +44,7 @@ The final configration would be looking like this
   PARSE_JS_KEY: '1MT3Ew8i1yQUX4SIvqbDiaggfszvtZ....',  
 ```
 
-Backend is used to store user configrations like `Watching Lists`, `Copy Trading Targets`, and `Contracts Information`. All the logic is inside the src/store.
-
-Also need to change `MAINNET_RPC` which is used to fetch the token balance.
+You also need to change `MAINNET_RPC` which is used to fetch the token balance. Create a new project at [Infura](https://infura.io/) and get RPC url.
 
 ### Compiles and hot-reloads for development
 ```
@@ -66,5 +60,3 @@ npm run build
 ```
 npm run lint
 ```
-
-#### Leave a star on top right if you want to get notification for further updates
