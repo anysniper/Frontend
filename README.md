@@ -8,7 +8,7 @@ Public Access https://app.anysnipers.com (You can switch to Rinkeby testnet on y
 
 # AnySniper DApp
 
-This repository contains all the code to run AnySniper DApp with 500 active users. All logic code is in this repository and you can add your custom DEX to src/config.js
+This repository contains all the code to run AnySniper DApp which had 500 active users. All logic code is in this repository and you can add your custom DEX to src/config.js
 
 There are currently Uniswap, Pancakeswap, Sushiswap, Degenswap and some DEXs on Crono chains.
 
