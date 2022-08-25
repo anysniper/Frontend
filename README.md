@@ -4,7 +4,7 @@ Explanations for each component in DApp [here](http://help.anysnipers.com/en/col
 
 Full Tutorial [here](http://help.anysnipers.com/en/articles/5989339-anysniper-dapp-tutorial)
 
-Public Access https://app.anysnipers.com (You can switch to Rinkeby testnet on your wallet)
+Public Access https://app.anysnipers.com (You can switch to Rinkeby testnet on your wallet, this is limited version, see the tutorial or run on your local for the full version)
 
 ![image](https://user-images.githubusercontent.com/98989620/186775106-ad5d5598-391c-4e43-92d1-16598822fffd.png)
 
