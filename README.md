@@ -1,4 +1,4 @@
-*WARNING*: links that are related to community are closed and scammers are dealing with it.
+**WARNING**: links that are related to community are closed and scammers are dealing with it.
 
 To run the sniper locally, see this [Wiki](https://github.com/anysniper/Frontend/wiki/Project-Setup)
 
