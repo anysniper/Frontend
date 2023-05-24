@@ -1,10 +1,12 @@
 **WARNING**: links that are related to community are closed and scammers are dealing with it.
 
+App moved to https://insidor.org
+
 To run the sniper locally, see this [Wiki](https://github.com/anysniper/Frontend/wiki/Project-Setup)
 
-Explanations for each component in DApp [here](http://help.anysnipers.com/en/collections/3347092-quick-guide-to-anysniper)
+Explanations for each component in DApp [here](https://insidor.gitbook.io/insidor/)
 
-Full Tutorial [here](http://help.anysnipers.com/en/articles/5989339-anysniper-dapp-tutorial)
+Full Tutorial [here](https://insidor.gitbook.io/insidor)
 
 Public Access https://app.anysnipers.com (You can switch to Rinkeby testnet on your wallet, this is limited version, see the tutorial or run on your local for the full version)
 
