@@ -1,7 +1,5 @@
 **WARNING**: links that are related to community are closed and scammers are dealing with it.
 
-If you need any help regarding the code, contact me on telegram https://t.me/oopcoder
-
 To run the sniper locally, see this [Wiki](https://github.com/anysniper/Frontend/wiki/Project-Setup)
 
 Explanations for each component in DApp [here](http://help.anysnipers.com/en/collections/3347092-quick-guide-to-anysniper)
