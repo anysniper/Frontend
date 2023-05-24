@@ -8,7 +8,7 @@ Explanations for each component in DApp [here](https://insidor.gitbook.io/insido
 
 Full Tutorial [here](https://insidor.gitbook.io/insidor)
 
-Public Access https://app.anysnipers.com (You can switch to Rinkeby testnet on your wallet, this is limited version, see the tutorial or run on your local for the full version)
+Public Access https://insidor.org
 
 ![image](https://user-images.githubusercontent.com/98989620/186775106-ad5d5598-391c-4e43-92d1-16598822fffd.png)
 
