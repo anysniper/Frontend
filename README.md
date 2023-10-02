@@ -4,14 +4,6 @@ App moved to https://insidor.org
 
 To run the sniper locally, see this [Wiki](https://github.com/anysniper/Frontend/wiki/Project-Setup)
 
-Explanations for each component in DApp [here](https://insidor.gitbook.io/insidor/)
-
-Full Tutorial [here](https://insidor.gitbook.io/insidor)
-
-Public Access https://insidor.org
-
-![image](https://user-images.githubusercontent.com/98989620/186775106-ad5d5598-391c-4e43-92d1-16598822fffd.png)
-
 # AnySniper DApp
 
 This repository contains all the code to run AnySniper DApp which had 500 active users. All logic code is in this repository and you can add your custom DEX to src/config.js
