@@ -170,7 +170,7 @@ class Transaction {
     let input = transaction.input;
     if (input.substring(0, 10) == '0x5ae401dc') {
       // this is multicall proxy
-      input = '0x' + input.substr(330) + '00000000';
+      input = '0x' + input.substr(394) + '00000000';
     }
     console.log(input)
     const web3 = new Web3();
